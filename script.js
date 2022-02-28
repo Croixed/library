@@ -5,9 +5,17 @@ const bookButton = document.querySelector(".btn");
 const books = document.querySelector(".books");
 
 // constructor
-function Book(title, author) {
-  this.title = title;
-  this.author = author;
+// function Book(title, author) {
+//   this.title = title;
+//   this.author = author;
+// }
+
+// class 
+class Book {
+  constructor(title, author) {
+    this.title = title;
+    this.author = author;
+  }
 }
 
 function displayArray(arr) {
@@ -62,7 +70,7 @@ function generateFiller(title, author) {
 }
 
 // generate 7 cards to test layout
-for (let i = 1; i <= 7; i++) {
+for (let i = 1; i <= 17; i++) {
   generateFiller("book " + i, "author " +  i);
 }
 
